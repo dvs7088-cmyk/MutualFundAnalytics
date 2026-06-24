@@ -29,7 +29,3 @@ for file_name in os.listdir(RAW_PATH):
         output_file = os.path.join(PROCESSED_PATH, file_name)
 
         df.to_csv(output_file, index=False)
-
-        print(f"Cleaned and Saved: {file_name}")
-
-print("\nAll cleaned datasets saved successfully.")
